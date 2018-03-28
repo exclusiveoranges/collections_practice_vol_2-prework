@@ -66,6 +66,7 @@ end
 def organize_schools(schools)
   my_schools = {}
     schools.each do |key, value|
+      binding.pry
       value.each do |key2, value2|
         if my_schools[value2]
             my_schools[value2]<<key
@@ -77,3 +78,26 @@ def organize_schools(schools)
     end
 my_schools
 end
+
+# let(:schools) {
+#   {
+#     "flatiron school bk" => {
+#       :location => "NYC"
+#     },
+#     "flatiron school" => {
+#       :location => "NYC"
+#     },
+#     "dev boot camp" => {
+#       :location => "SF"
+#     },
+#     "dev boot camp chicago" => {
+#       :location => "Chicago"
+#     },
+#     "general assembly" => {
+#       :location => "NYC"
+#     },
+#     "Hack Reactor" => {
+#       :location => "SF"
+#     }
+#   }
+# }
